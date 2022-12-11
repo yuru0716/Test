@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>REJI</title>
+    <style>
+        .middole {
+            margin-left: auto;
+            margin-right: 0px;
+        }
+        .big{
+            font-size: 40px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <script language="javascript" type="text/javascript">
+    var X
+    var Y
+    function main(){
+ 	var W = document.getElementById("textBox").value;
+ 	document.getElementById("text").innerHTML = (X*Y-W);
+}
+</script>
+  <body style="background-color:moccasin">
+
+        <div>
+            <label for="price">価格</label>
+            <button type="button" onclick="X=200" class="button is-primary" style="width: 200px;height:175px">三分</button>
+            <button type="button" onclick="X=300" class="button is-primary" style="width: 200px;height:175px">五分</button>
+            <button type="button" onclick="X=400" class="button is-primary" style="width: 200px;height:175px">十分</button>
+        </div>
+        <div>
+            <label for="quantity">人数</label>
+            <button type="button" onclick="Y=1" class="button is-info" style="width: 200px;height:175px">一人</button>
+            <button type="button" onclick="Y=2" class="button is-info" style="width: 200px;height:175px">二人</button>
+            <button type="button" onclick="Y=3" class="button is-info" style="width: 200px;height:175px">三人</button>
+            <button type="button" onclick="Y=4" class="button is-info" style="width: 200px;height:175px">四人</button>
+        </div>
+        <div>
+            <input type="number" id="textBox" name="textBox" style="width: 900px;height:175px">
+        </div>
+        <div>
+            <button type="button" onclick="main();" style="width: 850px;height:175px">確定</button>
+        </div>
+        <div>
+            <p id="text" class="big">0</p>
+        </div>
+        <audio controls autoplay src="OREI.mp3"></audio>
+        <table class="table" style="background-color:moccasin">
+            <th>分</th>
+            <th>価格</th>
+            <tr>
+                <td>三分</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>五分</td>
+                <td>300</td>
+            </tr>
+                <td>十分</td>
+                <td>400</td>
+            </td>
+        </table>
+  </body>
+</html>
